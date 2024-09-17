@@ -1,0 +1,17 @@
+function fibonacci(num) {
+  let a = 0, b = 1, temp;
+
+  while (a <= num) {
+    if (a === num) {
+      return `${num} pertence à sequência de Fibonacci.`;
+    }
+    temp = a + b;
+    a = b;
+    b = temp;
+  }
+
+  return `${num} não pertence à sequência de Fibonacci.`;
+}
+
+const num = 34; 
+console.log(fibonacci(num));
